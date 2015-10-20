@@ -35,4 +35,8 @@
     "normalize.css": "^3.0.3",
     "uglify-js": "^2.5.0"
   }
+  
+  "scripts": {
+  "test": "vows --spec"
+},
 }
