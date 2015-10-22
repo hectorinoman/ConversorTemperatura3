@@ -8,4 +8,4 @@ branches:
   only:
     - gh-pages
 script:
-    - npm test
+    - gulp
