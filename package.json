@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "ULL ESIT Grado de Informática. Lab \"Temperature Converter\"",
   "main": "temperatura.js",
+  
   "scripts": {
     "test": "open tests/index.html"
   },
@@ -34,9 +35,9 @@
   "dependencies": {
     "normalize.css": "^3.0.3",
     "uglify-js": "^2.5.0"
-  }
+  },
   
   "scripts": {
-  "test": "vows --spec"
+  "test": "./node_modules/karma/bin/karma start --single-run --browsers PhantomJS"
 },
-}
+
