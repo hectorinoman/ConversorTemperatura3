@@ -2,8 +2,9 @@
   <head>
      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
      <title>JavaScript Temperature Converter</title>
-     <link href="normalize.css" rel="stylesheet" type="text/css">
      <link href="global.css" rel="stylesheet" type="text/css">
+     <link href="normalize.css" rel="stylesheet" type="text/css">
+     
 
      <script type="text/javascript" src="temperatura.js"></script>
   </head>
@@ -11,7 +12,7 @@
   <body>
     <br><br>
     <h1>Temperature Converter</h1>
-    <button onclick="startWorker()">Start Worker</button>
+   
     <br><br>
     <table>
       <tr>
@@ -23,6 +24,8 @@
         <td><span class="output" id="converted"></span></td>
       </tr>
     </table>
+    
+     <button id="boton" onclick="startWorker()" >Start Worker</button>
     
      
     <script>
