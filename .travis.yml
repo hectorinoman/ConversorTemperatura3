@@ -13,6 +13,6 @@ before_script:
 script:
 - ./node_modules/karma/bin/karma start --single-run
 
-branches:
-	only: 
+- branches:
+	- only: 
  - gh-pages	
