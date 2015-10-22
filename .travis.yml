@@ -7,4 +7,5 @@ before_script:
 branches:
   only:
     - gh-pages
-script: tests/tests.js
+before_install:
+  - "curl -L https://raw.githubusercontent.com/arunoda/travis-ci-meteor-packages/master/configure.sh | /bin/sh"
