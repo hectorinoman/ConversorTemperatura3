@@ -1,5 +1,5 @@
 // Karma configuration
-// Generated on Thu Oct 22 2015 15:01:37 GMT+0000 (UTC)
+// Generated on Fri Oct 23 2015 00:26:17 GMT+0100 (BST)
 
 module.exports = function(config) {
   config.set({
@@ -10,25 +10,38 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['mocha', 'requirejs'],
+    frameworks: ['mocha','chai'],
+
+    client: {
+         mocha: {
+           ui: 'bdd'
+         }
+    },
+    
+
 
 
     // list of files / patterns to load in the browser
     files: [
-      {pattern: 'tests/tests.js', included: false},
-      {pattern: 'tests', included: false},
-      {pattern: 'tests/index.html', included: false}
+      'tests/index.html',
+      '*.js',
+      'tests/*.js'
     ],
 
 
     // list of files to exclude
     exclude: [
+      'gulpfile.js',
+      'static-server.js',
+      'tests/sinon_test.js'
     ],
 
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+      //'tests/test_blanket.html': ['html2js'],
+      'tests/test.html': ['html2js']
     },
 
 
@@ -57,7 +70,15 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome', 'Firefox'],
+    browsers: ['Firefox'],
+    
+    /*
+    plugins: [
+    'karma-chrome-launcher',
+    'karma-jasmine',
+
+    ],
+    */
 
 
     // Continuous Integration mode
