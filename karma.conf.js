@@ -31,8 +31,9 @@ module.exports = function(config) {
 
     // list of files to exclude
     exclude: [
+      'my.conf.js',
       'gulpfile.js',
-      'static-server.js',
+      'static_server.js',
       'tests/sinon_test.js'
     ],
 
@@ -83,10 +84,6 @@ module.exports = function(config) {
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
-    singleRun: false,
-
-    // Concurrency level
-    // how many browser should be started simultanous
-    concurrency: Infinity
+    singleRun: true
   })
 }

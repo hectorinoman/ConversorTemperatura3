@@ -29,19 +29,19 @@
   "dependencies": {},
   "devDependencies": {
     "blanket": "*",
-    "chai": "^3.3.0",
-    "del": "^2.0.2",
-    "html2js": "^0.2.0",
-    "jasmine-core": "^2.3.4",
+    "chai": "*",
+    "del": "*",
+    "html2js": "*",
+    "jasmine-core": "*",
     "karma": "*",
     "karma-chai": "*",
-    "karma-chrome-extra-launcher": "^0.1.0",
-    "karma-chrome-launcher": "^0.2.1",
-    "karma-coverage": "^0.5.3",
+    "karma-chrome-extra-launcher": "*",
+    "karma-chrome-launcher": "*",
+    "karma-coverage": "*",
     "karma-firefox-launcher": "*",
-    "karma-html2js-preprocessor": "^0.1.0",
-    "karma-jasmine": "^0.3.6",
+    "karma-html2js-preprocessor": "*",
+    "karma-jasmine": "*",
     "karma-mocha": "*",
-    "mocha": "2.3.3"
+    "mocha": "*"
   }
 }
