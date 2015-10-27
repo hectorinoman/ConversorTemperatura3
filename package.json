@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "open  http://localhost:3000/tests/index.html",
-    "karma": "./node_modules/karma/bin/karma start --single-run"
+    "karma": "./node_modules/karma/bin/karma start karma.conf.js --single-run"
   },
   "repository": {
     "type": "git",
@@ -39,10 +39,9 @@
     "karma-chrome-launcher": "^0.2.1",
     "karma-coverage": "^0.5.3",
     "karma-firefox-launcher": "*",
-
+    "karma-html2js-preprocessor": "^0.1.0",
     "karma-jasmine": "^0.3.6",
     "karma-mocha": "*",
-
     "mocha": "2.3.3"
   }
 }

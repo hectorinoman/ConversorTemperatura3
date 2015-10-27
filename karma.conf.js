@@ -40,7 +40,7 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      'tests/test_blanket.html': ['html2js'],
+      //'tests/test_blanket.html': ['html2js'],
       'tests/test.html': ['html2js']
     },
 
@@ -70,13 +70,15 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['chrome'],
+    browsers: ['Firefox'],
     
+    /*
     plugins: [
     'karma-chrome-launcher',
     'karma-jasmine',
 
     ],
+    */
 
 
     // Continuous Integration mode
