@@ -10,6 +10,6 @@ before_install:
 
 branches:
   only:
-    - tutoria
+    - gh-pages
 script:
 - ./node_modules/karma/bin/karma start --single-run
